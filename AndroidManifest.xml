@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="org.opencv.samples.tutorial1"
+          package="org.opencv.samples.facedetect"
           android:versionCode="301"
           android:versionName="3.01">
 
     <application
-        android:label="@string/app_name"
-        android:icon="@drawable/icon"
+        android:label="FYP"
+        android:icon="@drawable/weightlift"
         android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
 
-        <activity android:name="workingMain.mainActivity"
+        <activity android:name="FdActivity"
                   android:label="@string/app_name"
                   android:screenOrientation="landscape"
                   android:configChanges="keyboardHidden|orientation">
@@ -18,6 +18,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        
+         <activity
+            android:name="OpeningActivity"
+            android:screenOrientation="landscape"
+            android:label="@string/app_name">
+         </activity> 
+        
+        <activity
+            android:name="StartingActivity"
+            android:screenOrientation="landscape"
+            android:label="@string/app_name">
+         </activity> 
+        
+        <activity
+            android:name="FinalActivity"
+            android:screenOrientation="landscape"
+            android:label="@string/app_name">
+         </activity>     
     </application>
 
     <supports-screens android:resizeable="true"
@@ -26,9 +44,10 @@
                       android:largeScreens="true"
                       android:anyDensity="true" />
 
-    <uses-sdk android:minSdkVersion="8" />
-
+    <uses-sdk android:minSdkVersion="13" />
     <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <uses-feature android:name="android.hardware.camera" android:required="false"/>
     <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>

@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">OCV T1 Preview</string>
+    <string name="app_name">Weight Training</string>
+    <string name="userName">User Exercising:</string>
+    <string name="userExercise">Exercise:</string>
+    <string name="userWeight">Weight Being Used(kg):</string>
+    <string name="readyButton">Get Started</string>
+    <string name="viewHistorical">View Historical</string>
+    <string name="newSess">New Session</string>
+    <string name="returnButton">Return</string>
 </resources>
